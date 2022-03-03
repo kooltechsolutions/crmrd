@@ -1,14 +1,9 @@
-{% extends "base.html"%} 
+{% extends 'base.html' %}
 {% load tailwind_filters %}
 
-{% block content%}
+{% block content %}
 
 <div class="max-w-lg mx-auto">
-
-    <div class="py-5 border-b border-gray-200">
-        <a class="hover:text-blue-500" href="{% url 'signup' %}">DON'T HAVE AN ACCOUNT?</a>
-    </div>
-
     <form method="post" class="mt-5">
         {% csrf_token %}
         {{ form|crispy }}
@@ -20,5 +15,4 @@
         <a class="hover:text-blue-500" href="{% url 'login' %}">ALREADY HAVE AN ACCOUNT?</a>
     </div>
 </div>
-
-{% endblock content%}
+{% endblock content %}

@@ -36,7 +36,7 @@ class AgentCreateView(OrganisorAndLoginRequiredMixin, generic.CreateView):
         )
         send_mail(
             subject="You are invited to be an agent",
-            message="You were added as an agent on CRM RD. Please come login to start working.",
+            message="You were added as an agent on CRM INMOBILIARIO DOMINICANO. Please come login to start working.",
             from_email="admin@test.com",
             recipient_list=[user.email]
         )
