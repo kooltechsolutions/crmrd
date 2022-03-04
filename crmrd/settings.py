@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     # Third party apps
     'crispy_forms',
     "crispy_tailwind",
-    #'tailwind',
-    #'theme',
+    'tailwind',
+    'theme',
 
     # Local apps
     'leads',
@@ -183,6 +183,6 @@ LOGGING = {
     },
 }
 
-#TAILWIND_APP_NAME = 'theme'
+TAILWIND_APP_NAME = 'theme'
 
 
